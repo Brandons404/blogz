@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .error {
+                color: red;
+				display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Login</h1>
+        <form action="/login" method="post">
+            <table>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td>
+                        <input id="log-user" name="log-user" type="text" value="{{value.username}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>
+                        <input id="log-pass" name="log-pass" type="password"><p>{{error}}</p>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+    </body>
+</html>

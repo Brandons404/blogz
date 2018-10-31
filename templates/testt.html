@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .error {
+                color: red;
+				display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>Signup</h1>
+        <form action="/signup" method="post">
+            <table>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td>
+                        <input id="username" name="username" type="text" value="{{user1}}"><p class="error">{{name1}}</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td>
+                        <input id="pas1" name="pas1" type="password" value="{{firstpassword}}">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="verify">Verify Password</label></td>
+                    <td>
+                        <input id="pas2" name="pas2" type="password"><p class="error">{{pass2}}</p>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit">
+        </form>
+    </body>
+</html>
