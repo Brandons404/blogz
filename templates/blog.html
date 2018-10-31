@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+	<hr />
+	<h2>{{post.name}}</h2><br><hr>
+	<p>{{post.body}}</p>
+	<br><br>
+	<p><i>Written by: <a href="/goto_user?id={{post.owner.id}}">{{post.owner.username}}<a></a></i></p>
+	
+	
+{% endblock %}
